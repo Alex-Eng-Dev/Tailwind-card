@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@keyframes rotarID {
+
+    0%,
+    100% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+.animate-card {
+    animation: rotarID 1s ease-in-out infinite;
+}
+
+.content-main {
+    @apply h-screen p-[20px] bg-linear-to-r from-cyan-700 via-blue-500 to-indigo-600
+    text-black grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 font-bold;
+}
